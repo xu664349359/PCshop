@@ -28,7 +28,7 @@
               <i class="el-icon-location"></i>
               <span>系统管理</span>
             </template>
-            <el-menu-item index="1-1">
+            <el-menu-item index="/user">
               <i class="el-icon-menu"></i>
               <span slot="title">用户管理</span>
             </el-menu-item>
@@ -38,7 +38,7 @@
               <i class="el-icon-location"></i>
               <span>产品管理</span>
             </template>
-            <el-menu-item index="2-1">
+            <el-menu-item index="/product">
               <i class="el-icon-menu"></i>
               <span slot="title">产品列表</span>
             </el-menu-item>
