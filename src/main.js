@@ -3,12 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import '@/assets/base.css'
+import '@/assets/css/base.css'
+// 富文本编辑器引入
+import VueQuillEditor from 'vue-quill-editor'
 
-import axios from 'axios'
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+Vue.use(VueQuillEditor)
+// axios引入
 Vue.prototype.axios = axios
 // 配置axios的请求拦截器
 axios.interceptors.request.use(
@@ -30,7 +37,6 @@ axios.interceptors.response.use(
     return Promise.reject(error)
   }
 )
-
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

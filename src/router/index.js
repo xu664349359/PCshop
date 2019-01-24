@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/Login'
-import Home from '@/components/Home'
-import User from '@/components/User'
-import Order from '@/components/Order'
-import Product from '@/components/Product'
+import Login from '@/views/Login'
+import Home from '@/views/Home'
+import User from '@/views/User'
+import Order from '@/views/Order'
+import Product from '@/views/Product'
+
 Vue.use(Router)
 
 const router = new Router({

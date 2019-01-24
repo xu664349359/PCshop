@@ -1,4 +1,6 @@
 /build/
 /config/
+/static/
+/src/components/ue.vue
 /dist/
 /*.js
